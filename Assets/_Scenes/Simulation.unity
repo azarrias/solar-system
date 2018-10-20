@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 100536906}
   - component: {fileID: 100536905}
   - component: {fileID: 100536904}
+  - component: {fileID: 100536908}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -194,6 +195,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100536908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100536903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6645c5deb7a1b46a62d7aa8f27bc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &364296886
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +219,7 @@ GameObject:
   - component: {fileID: 364296887}
   - component: {fileID: 364296891}
   - component: {fileID: 364296892}
+  - component: {fileID: 364296893}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -374,6 +387,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &364296893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364296886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2066c9f0c2471b44b6284eb55b3adab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &826346276
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +413,7 @@ GameObject:
   - component: {fileID: 826346281}
   - component: {fileID: 826346282}
   - component: {fileID: 826346283}
+  - component: {fileID: 826346284}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -568,6 +594,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &826346284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826346276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2066c9f0c2471b44b6284eb55b3adab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &852031574
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +757,7 @@ GameObject:
   - component: {fileID: 1958930832}
   - component: {fileID: 1958930836}
   - component: {fileID: 1958930837}
+  - component: {fileID: 1958930838}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -818,3 +857,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 826346280}
   speed: 5
+--- !u!114 &1958930838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958930831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2066c9f0c2471b44b6284eb55b3adab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
